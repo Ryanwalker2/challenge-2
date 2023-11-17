@@ -1,0 +1,129 @@
+:root {
+    --background: #4c4c4d;
+    --color: white;
+    --border: rgb(105, 105, 233);
+}
+
+* {
+    font-family: serif;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background);
+    color: var(--color);
+    height: 100px;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    background-color: var(--border);
+    color: var(--color);
+    margin: 0;
+    padding: 10px 50px 10px 150px;
+    border: 2px solid var(--border);
+    float: right;
+    position: absolute;
+    font-size: 40px;
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    flex: 0 0 1 ;
+    align-content: center;
+}
+
+nav li {
+    text-wrap: nowrap;
+    margin: 10px;
+    padding: 20px;
+    border: 2px var(--border) solid;
+    background-color: var(--border);
+    max-height: 100px;
+    max-width: fit-content;
+}
+
+.About-Me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 50px 20px 20px 20px;
+}
+
+.About-Me h2 {
+    margin-left: 100px;
+    border-right: 4px solid var(--border);
+    text-align: left;
+}
+
+.About-Me p {
+    margin-left: 95px;
+    padding: 20px 20px;
+    border: 2px solid var(--border);
+    width: 100%;
+}
+
+.Work {
+    display: flex;
+}
+
+.sidebar {
+    display: block;
+    margin: 10px;
+    padding: 50px 100px 20px 75px;
+    min-height: 400px;
+    max-width: 100px;
+    border-right: 4px solid var(--border);
+}
+
+.exp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.experience-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 100%;
+    min-width: 400px;
+    min-height: 400px;
+    margin: 20px;
+    padding: 20px; 
+    border: 2px solid var(--border);  
+    transition: background-color 0.5s;
+}
+
+.experience-1:hover {
+     background-color: bisque;
+     
+}
+
+.experience {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: auto;
+    min-width: 250px;
+    min-height: 150px;
+    margin: 20px;
+    padding: 20px; 
+    border: 2px solid var(--border);   
+}
+
+
